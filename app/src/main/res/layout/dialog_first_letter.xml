@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:windowBackground="@color/trasparent"
+    android:windowIsTranslucent="true"
+    android:windowContentOverlay="@null"
+    android:backgroundDimEnabled="false"
+    app:cardBackgroundColor="@color/CardSearch"
+    app:cardCornerRadius="15dp"
+    android:windowNoTitle="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:windowBackground="@color/trasparent"
+        android:windowIsTranslucent="true"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/etnameSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/letterofdrink"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnNameSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/CardSearch"
+            android:drawableLeft="@drawable/ic_search"
+            android:enabled="false"
+            android:text="@string/search"></Button>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
